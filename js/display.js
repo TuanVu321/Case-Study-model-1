@@ -33,7 +33,7 @@ function showList(bookList) {
     }
     document.getElementById('table').innerHTML = html;
 }
-
+localStorage.setItem("list",JSON.stringify(bookList));
 showList(bookList);
 
 
